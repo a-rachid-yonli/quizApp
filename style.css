@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(9, 38, 39);
+    font-family: 'Poppins', sans-serif;
+    background: #252627;
+}
+
+
+
+.badge-danger {
+    background: chocolate;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #eceff1!important;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -1;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.container:before,
+.container:after {
+    background: linear-gradient(235deg, #d33b3b, #060c21, #2528e4)
+}
